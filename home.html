@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Outlook Web Client</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            height: 100vh;
+        }
+        .sidebar {
+            width: 250px;
+            background-color: #0078d4;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            padding: 20px;
+        }
+        .sidebar h2 {
+            font-size: 1.5em;
+            margin-bottom: 20px;
+        }
+        .sidebar a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 0;
+            margin: 5px 0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+        }
+        .sidebar a:hover {
+            background-color: rgba(255, 255, 255, 0.1);
+        }
+.content {
+    flex-grow: 1;
+    background-color: white;
+    padding: 20px;
+    overflow-y: auto;
+}
+.email-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.email-item {
+    padding: 15px;
+    border-bottom: 1px solid #ddd;
+    display: flex;
+    flex-direction: column;
+}
+.email-item:hover {
+    background-color: #f0f0f0;
+}
+.sender, .subject, .preview, .date {
+    margin: 2px 0;
+}
+.sender {
+    font-weight: bold;
+    color: #0078d4;
+}
+.subject a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+.subject a:hover {
+    text-decoration: underline;
+}
+.preview {
+    color: #555;
+    font-size: 0.9em;
+}
+.date {
+    text-align: right;
+    color: #999;
+    font-size: 0.8em;
+}
+
+    </style>
+</head>
+<body>
+    <div class="sidebar">
+        <h2>Outlook</h2>
+        <a href="#">Inbox</a>
+        <a href="#">Junk Email</a>
+        <a href="#">Drafts</a>
+        <a href="#">Sent Items</a>
+        <a href="#">Deleted Items</a>
+    </div>
+ <div class="content">
+    <ul class="email-list">
+        <li class="email-item">
+            <div class="sender">admin@company.com</div>
+            <div class="subject"><a href="email1.html">Important Update</a></div>
+            <div class="preview">Please read this important update regarding...</div>
+            <div class="date">May 22, 2024</div>
+        </li>
+        <li class="email-item">
+            <div class="sender">billing@company.com</div>
+            <div class="subject"><a href="email2.html">Your Invoice</a></div>
+            <div class="preview">Your invoice for the month of May is now...</div>
+            <div class="date">May 21, 2024</div>
+        </li>
+        <li class="email-item">
+            <div class="sender">support@company.com</div>
+            <div class="subject"><a href="email3.html">Support Ticket Update</a></div>
+            <div class="preview">Your support ticket has been updated. Please...</div>
+            <div class="date">May 20, 2024</div>
+        </li>
+        <li class="email-item">
+            <div class="sender">news@newsletter.com</div>
+            <div class="subject"><a href="email4.html">Weekly Newsletter</a></div>
+            <div class="preview">Catch up on the latest news and updates in...</div>
+            <div class="date">May 19, 2024</div>
+        </li>
+        <!-- Add more fake emails as needed -->
+    </ul>
+</div>
+
+            <!-- Add more fake emails as needed -->
+        </ul>
+    </div>
+</body>
+</html>
+
